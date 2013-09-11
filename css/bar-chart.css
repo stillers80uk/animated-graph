@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* ANIMATED GRAPH
+================================================== */
+.pos {padding: 8px; text-decoration: none; color: #fff; -webkit-animation-name: bar; -moz-animation-name: bar; -webkit-animation-duration: 1s;  -moz-animation-duration: 1s; /*fast*/ -webkit-animation-iteration-count: 1; -moz-animation-iteration-count: 1; /*once*/ -webkit-animation-timing-function: ease; -moz-animation-timing-function: ease; /*ease it*/}
+.c-year {width:300px}
+.c-year .pos {background-color: #666}
+.p-year {width:200px}
+.p-year .pos {background-color: #666}
+
+.bar {
+color: #fff;
+padding: 4px;
+text-align: right;
+background-image: linear-gradient(left , rgb(165,214,144) 32%, rgb(110,237,78) 81%);
+background-image: -o-linear-gradient(left , rgb(165,214,144) 32%, rgb(110,237,78) 81%);
+background-image: -moz-linear-gradient(left , rgb(165,214,144) 32%, rgb(110,237,78) 81%);
+background-image: -webkit-linear-gradient(left , rgb(165,214,144) 32%, rgb(110,237,78) 81%);
+background-image: -ms-linear-gradient(left , rgb(165,214,144) 32%, rgb(110,237,78) 81%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	right bottom,
+	color-stop(0.32, rgb(165,214,144)),
+	color-stop(0.81, rgb(110,237,78))
+);
+-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; -webkit-animation-name:bar; -webkit-animation-duration:3s; -webkit-animation-iteration-count:1; -webkit-animation-timing-function:ease}
+
+#slide60 {-webkit-animation-name:bar60; animation-delay:0s; -webkit-animation-delay:0.1s; }
+
+@-webkit-keyframes bar60 {
+0% { width:0%; }
+50% { width:100%; }
+100% { width:60%; }
+}
+
+#slide91 {-webkit-animation-name:bar91; animation-delay:1s; -webkit-animation-delay:0.2s; }
+
+@-webkit-keyframes bar91 {
+0% { width:0%; }
+50% { width:100%; }
+100% { width:91%; }
+}
+
+#slide39 {-webkit-animation-name:bar39; animation-delay:2s; -webkit-animation-delay:0.1s; }
+
+@-webkit-keyframes bar39 {
+0% { width:0%; }
+50% { width:100%; }
+100% { width:39%; }
+}
+
+/* Table cells */
+td.component-main {max-width:280px}
+td.details {max-width:350px}
+td.grey-cell {background-color:#666}
+
+/* Table row */
+tr {font-size:0.9em}
+
+/* Table caption */
+caption {font-size:0.8em; color:#000; line-height:14px; margin-bottom:10px}
+
+/* Table heading */
+th {background-color:#333333; color:#FFF}
+th.country {width:80px}
+td.country {text-align:center}
+th.popularity {width:200px}
+th.name {width:300px}
+th.year {width:60px}
+th.change {width:90px}
